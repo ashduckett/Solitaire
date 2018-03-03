@@ -1,0 +1,8 @@
+Add draggable regions.
+Add animating back to home.
+Add detecting when you're dragging over another draggable. Or find another solution
+to the rows and columns thing. Maybe subclassing and having some identifying trait
+of a row or column?
+
+Think about how you might want to subclass. How would you call a parent's event handler and then do your own logic, maybe? You can't override the event handler,
+but you could override a method...then call that method in the event handler or something?
