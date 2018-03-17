@@ -1,5 +1,10 @@
 var Card = function(suit, value) {
-    DraggableDiv.call(this);
+        
+    DraggableDiv.call(this, {
+        width: 153,
+        height: 204
+    });
+
     this.suit = suit;
     this.value = value;
 };

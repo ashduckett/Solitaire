@@ -1,4 +1,4 @@
-// We could do with some Rect stuff!
+// Rect stuff for...is this rever used?
 var Rect = function(xPos, yPos, height, width) {
     this.xPos = xPos;
     this.yPos = yPos;
@@ -12,8 +12,8 @@ var DraggableDiv = function(options) {
     this.element.style.position = 'absolute';
     this.element.style.top = options ? (options.yPos ? options.yPos + 'px' : '100px') : '100px';
     this.element.style.left = options ? (options.xPos ? options.xPos + 'px' : '100px') : '100px';
-    this.element.style.width = '100px';
-    this.element.style.height = '100px';
+    this.element.style.width = options ? (options.width ? options.width + 'px' : '100px') : '100px';
+    this.element.style.height = options ? (options.height ? options.height + 'px' : '100px') : '100px';
     this.element.style.backgroundColor = 'red';
     this.clickX = 0;
     this.clickY = 0;

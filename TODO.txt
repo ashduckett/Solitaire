@@ -6,3 +6,11 @@ of a row or column?
 
 Think about how you might want to subclass. How would you call a parent's event handler and then do your own logic, maybe? You can't override the event handler,
 but you could override a method...then call that method in the event handler or something?
+
+
+
+
+
+
+
+Resize divs to match the size of the card sprites.
