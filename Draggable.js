@@ -130,3 +130,11 @@ DraggableDiv.prototype.setLeft = function(left) {
 DraggableDiv.prototype.getWidth = function() {
     return this.element.offsetWidth;
 };
+
+DraggableDiv.prototype.setImage = function(path, x, y) {
+    this.element.style.backgroundImage = 'url(' + path + ')';
+    console.log(path);
+    if(x && y) {
+        this.element.style.backgroundPosition = x + 'px ' + y + 'px';
+    }
+}

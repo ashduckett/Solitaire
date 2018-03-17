@@ -15,8 +15,10 @@ var GameController = function() {
             card.setTop(startingTop);
             card.setLeft(startingLeft);
             card.setHomeToMatchPos();
-
             card.addToParent(document.documentElement);
+
+            card.setImage('7club.png');
+
         }
         startingLeft += card.getWidth() + 1;
     }

@@ -11,3 +11,4 @@ var Card = function(suit, value) {
 
 Card.prototype = Object.create(DraggableDiv.prototype);
 Card.prototype.constructor = DraggableDiv;
+
